@@ -25,3 +25,10 @@ body {
     text-wrap: balance;
   }
 }
+
+
+.headerStyle{
+  background-color: #28abfa66;
+    border-radius: 50px;
+    backdrop-filter: blur(10px);
+}
