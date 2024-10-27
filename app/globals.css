@@ -11,12 +11,13 @@
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
+    --sectionBgButton: #06A9EF14 
   }
 }
 
 body {
   color: var(--foreground);
-  background: var(--background);
+  /* background: var(--background); */
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -31,4 +32,8 @@ body {
   background-color: #28abfa66;
     border-radius: 50px;
     backdrop-filter: blur(10px);
+}
+
+.textSectionBackground{
+  background-color: var(--sectionBgButton);
 }
