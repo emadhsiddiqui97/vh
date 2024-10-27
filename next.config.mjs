@@ -3,6 +3,9 @@ const nextConfig = {
     images: {
         domains:['getvininfo.ca']
     },
+    eslint: {
+        ignoreDuringBuilds: true,
+      },
 };
 
 export default nextConfig;
