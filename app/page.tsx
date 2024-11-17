@@ -13,7 +13,7 @@ export default function Home() {
           if (key === arr.length - 1) {
             return (
               <>
-                <div className="flex flex-col md:flex-row justify-between">
+                <div className="flex flex-col md:flex-row w-full justify-between space-x-8">
                   {cardData.map((card, key) => {
                     return (
                       <Card

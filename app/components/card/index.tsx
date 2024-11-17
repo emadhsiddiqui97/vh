@@ -10,24 +10,22 @@ const Card: FC<card> = ({ isPriceCard, properties }) => {
       return (
         <li
           key={key}
-          className={`flex text-black  items-center${
-            isPriceCard ? "" : "font-bold"
-          }`}
+          className={`flex   items-center${isPriceCard ? "" : "font-bold"}`}
         >
           {isPriceCard ? <Checkbox /> : <Tick />}
-          <p className="text-black ml-2">{item}</p>
+          <p className="text-gray-600 ml-2 text-md">{item}</p>
         </li>
       );
     });
   };
   return (
     <div
-      className={`flex flex-col ${
-        isPriceCard ? "" : "shadow-lg border-blue-500 rounded-xl"
+      className={`flex flex-col p-4 basis-1/3 ${
+        isPriceCard ? "shadow-2xl border-blue-500 rounded-3xl border-4" : ""
       }`}
     >
       {isPriceCard ? (
-        <div className="flex flex-col">
+        <div className="flex flex-col items-center">
           <span className="uppercase font-bold text-sm text-blue-500">
             {isPriceCard.package}
           </span>
@@ -35,9 +33,11 @@ const Card: FC<card> = ({ isPriceCard, properties }) => {
           <span className="text-black ">in {isPriceCard.time}</span>
         </div>
       ) : null}
-      <ul>{listProperties()}</ul>
+      <ul className="overflow-y-scroll h-1/2">{listProperties()}</ul>
       {isPriceCard ? (
-        <Button text={isPriceCard.buttonText} href={isPriceCard.link} />
+        <div className="m-auto p-4">
+          <Button text={isPriceCard.buttonText} href={isPriceCard.link} />
+        </div>
       ) : null}
     </div>
   );
