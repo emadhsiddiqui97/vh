@@ -7,6 +7,7 @@ const Checkbox: FC<svgProps> = ({ width, height }) => {
       width={width ? width : "16"}
       height={height ? height : "16"}
       aria-hidden="true"
+      style={{ fill: "green" }}
       className="e-font-icon-svg e-fas-check-square"
       viewBox="0 0 448 512"
       xmlns="http://www.w3.org/2000/svg"

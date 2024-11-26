@@ -11,14 +11,14 @@
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
-    --sectionBgButton: #06A9EF14 
+    --sectionBgButton: #06a9ef14;
   }
 }
 
 body {
   color: var(--foreground);
   /* background: var(--background); */
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 @layer utilities {
@@ -27,13 +27,20 @@ body {
   }
 }
 
-
-.headerStyle{
+.headerStyle {
   background-color: #28abfa66;
-    border-radius: 50px;
-    backdrop-filter: blur(10px);
+  border-radius: 50px;
+  backdrop-filter: blur(10px);
 }
 
-.textSectionBackground{
+.textSectionBackground {
   background-color: var(--sectionBgButton);
+}
+
+.backgroundVideo {
+  position: fixed;
+  right: 0;
+  bottom: top;
+  min-width: 100%;
+  min-height: 70%;
 }
