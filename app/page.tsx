@@ -17,7 +17,7 @@ export default function Home() {
           if (key === arr.length - 1) {
             return (
               <>
-                <div className="flex flex-col md:flex-row w-full justify-between space-x-8">
+                <div className="flex flex-col lg:flex-row space-y-8 items-center lg:items-stretch lg:space-y-0 w-full lg:justify-between space-x-8">
                   {cardData.map((card, key) => {
                     return (
                       <Card

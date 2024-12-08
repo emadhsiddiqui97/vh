@@ -4,7 +4,7 @@ import logo from "../../logo.webp";
 
 const Header = () => {
   return (
-    <div className="flex justify-between items-center align-center self-center m-4 my-8 p-2 px-10 headerStyle w-[80vw]">
+    <div className="flex justify-between items-center align-center self-center m-4 my-8 p-2 px-10 headerStyle max-w-[80vw] xl:max-w-[1250px] w-full">
       <div className="flex">
         <Image src={logo} alt="" height={50} />
       </div>
