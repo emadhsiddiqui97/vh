@@ -20,15 +20,8 @@ const Card: FC<card> = ({ isPriceCard, properties }) => {
   };
   return (
     <div
-<<<<<<< HEAD
-      className={`flex flex-col p-4 basis-1/3  ${
-        isPriceCard
-          ? "shadow-2xl border-blue-500 rounded-3xl border-4 justify-around h-[1/2]"
-          : ""
-=======
       className={`flex flex-col lg:h-[30rem] md:max-w-[50%] justify-between lg:w-full p-4 basis-1/3 ${
         isPriceCard ? "shadow-2xl border-blue-500 rounded-3xl border-4" : ""
->>>>>>> 7e70522 (untracked changes)
       }`}
     >
       {isPriceCard ? (
@@ -42,11 +35,7 @@ const Card: FC<card> = ({ isPriceCard, properties }) => {
       ) : null}
       <ul className="overflow-y-scroll h-1/3">{listProperties()}</ul>
       {isPriceCard ? (
-<<<<<<< HEAD
-        <div className="mx-auto p-4">
-=======
         <div className="m-x-auto flex justify-center p-4">
->>>>>>> 7e70522 (untracked changes)
           <Button text={isPriceCard.buttonText} href={isPriceCard.link} />
         </div>
       ) : null}
